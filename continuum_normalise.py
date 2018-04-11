@@ -32,4 +32,4 @@ output_path = "{}.pkl".format(input_path[:-5])
 with open(output_path, "wb") as fp:
     # We don't save the dispersion array because it is already stored in
     # common_vac_wavelengths.pkl
-    pickle.dump((flux, ivar, meta), fp)
+    pickle.dump((norm_flux, norm_ivar, meta), fp)
